@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBMultiPointCurvChartView.h"
 
-@interface DBViewController : UIViewController
+@interface DBViewController : UIViewController<DBMultiPointCurvDataSource>
 
 @end

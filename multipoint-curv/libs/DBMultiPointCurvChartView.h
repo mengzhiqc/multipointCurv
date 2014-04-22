@@ -11,10 +11,11 @@
 @class DBMultiPointCurvChartView;
 
 @protocol DBMultiPointCurvDataSource <NSObject>
-
+-(NSArray *)dataSourceOfcurvChartView:(DBMultiPointCurvChartView *)curvChartView ;
 
 @end
 @interface DBMultiPointCurvChartView : UIView
+@property (nonatomic,weak) id<DBMultiPointCurvDataSource> dataSource;
 @property (nonatomic) NSArray *points;
 @property (nonatomic) float prevDegree;
 @end

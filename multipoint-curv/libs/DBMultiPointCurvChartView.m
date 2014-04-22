@@ -24,7 +24,7 @@
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-    self.points = @[@0.0,@50.0,@25,@50,@50,@60,@75,@60,@100,@75,@125,@80,@150,@70,@175,@80,@200,@90,@225,@100,@250,@100];
+    
     if (self) {
         // Initialization code
         self.k = 0;
@@ -38,6 +38,10 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
+    if ([self.dataSource respondsToSelector:@selector(dataSourceOfcurvChartView:)]) {
+        self.points = [self.dataSource dataSourceOfcurvChartView:self];
+    }
+    
     // Drawing code
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, 2.0);
@@ -86,9 +90,9 @@
             if (prePointX > 0) {
                 if (DEBUG) {
                     NSLog(@"CurrentPoint:(%f,%f) NextPoint:(%f,%f)",currentPointX,currentPointY, nextPointX,nextPointY);
-                    self.k = (currentPointY-self.controlPointY)/(currentPointX - self.controlPointX);
                 }
-                
+                self.k = (currentPointY-self.controlPointY)/(currentPointX - self.controlPointX);
+
 
             }
 
