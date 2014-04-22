@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class DBMultiPointCurv;
+@class DBMultiPointCurvChartView;
 
 @protocol DBMultiPointCurvDataSource <NSObject>
 
 
 @end
-@interface DBMultiPointCurv : UIView
+@interface DBMultiPointCurvChartView : UIView
 @property (nonatomic) NSArray *points;
 @property (nonatomic) float prevDegree;
 @end

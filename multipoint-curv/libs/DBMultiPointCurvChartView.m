@@ -6,11 +6,11 @@
 //  Copyright (c) 2014年 LenyeStudio. All rights reserved.
 //
 
-#import "DBMultiPointCurv.h"
+#import "DBMultiPointCurvChartView.h"
 
 #define SHOW_CONTROL_POINT NO
 
-@interface DBMultiPointCurv()
+@interface DBMultiPointCurvChartView()
 
 @property (nonatomic) float k;
 @property (nonatomic) float controlPointX;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation DBMultiPointCurv
+@implementation DBMultiPointCurvChartView
 
 - (id)initWithFrame:(CGRect)frame
 {

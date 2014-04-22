@@ -7,7 +7,7 @@
 //
 
 #import "DBViewController.h"
-#import "DBMultiPointCurv.h"
+#import "DBMultiPointCurvChartView.h"
 
 @interface DBViewController ()
 
@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    DBMultiPointCurv *curv = [[DBMultiPointCurv alloc]initWithFrame:CGRectMake(20, 20, 320, 400)];
+    DBMultiPointCurvChartView *curv = [[DBMultiPointCurvChartView alloc]initWithFrame:CGRectMake(20, 20, 320, 400)];
     curv.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:curv];
 }

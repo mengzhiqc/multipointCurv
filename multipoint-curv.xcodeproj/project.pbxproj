@@ -21,7 +21,7 @@
 		8A3DE76219052694002BC3DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3DE74419052693002BC3DF /* UIKit.framework */; };
 		8A3DE76A19052694002BC3DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DE76819052694002BC3DF /* InfoPlist.strings */; };
 		8A3DE76C19052694002BC3DF /* multipoint_curvTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DE76B19052694002BC3DF /* multipoint_curvTests.m */; };
-		8A3DE778190526B6002BC3DF /* DBMultiPointCurv.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DE777190526B6002BC3DF /* DBMultiPointCurv.m */; };
+		8A71F3571906179B006FCC5D /* DBMultiPointCurvChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A71F3561906179B006FCC5D /* DBMultiPointCurvChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		8A3DE76719052694002BC3DF /* multipoint-curvTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "multipoint-curvTests-Info.plist"; sourceTree = "<group>"; };
 		8A3DE76919052694002BC3DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A3DE76B19052694002BC3DF /* multipoint_curvTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = multipoint_curvTests.m; sourceTree = "<group>"; };
-		8A3DE776190526B6002BC3DF /* DBMultiPointCurv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMultiPointCurv.h; sourceTree = "<group>"; };
-		8A3DE777190526B6002BC3DF /* DBMultiPointCurv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMultiPointCurv.m; sourceTree = "<group>"; };
+		8A71F3551906179B006FCC5D /* DBMultiPointCurvChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMultiPointCurvChartView.h; sourceTree = "<group>"; };
+		8A71F3561906179B006FCC5D /* DBMultiPointCurvChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMultiPointCurvChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 		8A3DE74619052693002BC3DF /* multipoint-curv */ = {
 			isa = PBXGroup;
 			children = (
-				8A3DE7751905269D002BC3DF /* libs */,
+				8A71F3541906179B006FCC5D /* libs */,
 				8A3DE74F19052693002BC3DF /* DBAppDelegate.h */,
 				8A3DE75019052693002BC3DF /* DBAppDelegate.m */,
 				8A3DE75219052693002BC3DF /* Main.storyboard */,
@@ -156,13 +156,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8A3DE7751905269D002BC3DF /* libs */ = {
+		8A71F3541906179B006FCC5D /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				8A3DE776190526B6002BC3DF /* DBMultiPointCurv.h */,
-				8A3DE777190526B6002BC3DF /* DBMultiPointCurv.m */,
+				8A71F3551906179B006FCC5D /* DBMultiPointCurvChartView.h */,
+				8A71F3561906179B006FCC5D /* DBMultiPointCurvChartView.m */,
 			);
-			name = libs;
+			path = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A3DE778190526B6002BC3DF /* DBMultiPointCurv.m in Sources */,
+				8A71F3571906179B006FCC5D /* DBMultiPointCurvChartView.m in Sources */,
 				8A3DE75119052693002BC3DF /* DBAppDelegate.m in Sources */,
 				8A3DE75719052693002BC3DF /* DBViewController.m in Sources */,
 				8A3DE74D19052693002BC3DF /* main.m in Sources */,
@@ -475,6 +475,7 @@
 				8A3DE77119052694002BC3DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A3DE77219052694002BC3DF /* Build configuration list for PBXNativeTarget "multipoint-curvTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +484,7 @@
 				8A3DE77419052694002BC3DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
