@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A3DE74119052693002BC3DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3DE74019052693002BC3DF /* Foundation.framework */; };
+		8A3DE74319052693002BC3DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3DE74219052693002BC3DF /* CoreGraphics.framework */; };
+		8A3DE74519052693002BC3DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3DE74419052693002BC3DF /* UIKit.framework */; };
+		8A3DE74B19052693002BC3DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DE74919052693002BC3DF /* InfoPlist.strings */; };
+		8A3DE74D19052693002BC3DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DE74C19052693002BC3DF /* main.m */; };
+		8A3DE75119052693002BC3DF /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DE75019052693002BC3DF /* DBAppDelegate.m */; };
+		8A3DE75419052693002BC3DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DE75219052693002BC3DF /* Main.storyboard */; };
+		8A3DE75719052693002BC3DF /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DE75619052693002BC3DF /* DBViewController.m */; };
+		8A3DE75919052693002BC3DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DE75819052693002BC3DF /* Images.xcassets */; };
+		8A3DE76019052694002BC3DF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3DE75F19052694002BC3DF /* XCTest.framework */; };
+		8A3DE76119052694002BC3DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3DE74019052693002BC3DF /* Foundation.framework */; };
+		8A3DE76219052694002BC3DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3DE74419052693002BC3DF /* UIKit.framework */; };
+		8A3DE76A19052694002BC3DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DE76819052694002BC3DF /* InfoPlist.strings */; };
+		8A3DE76C19052694002BC3DF /* multipoint_curvTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DE76B19052694002BC3DF /* multipoint_curvTests.m */; };
+		8A3DE778190526B6002BC3DF /* DBMultiPointCurv.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DE777190526B6002BC3DF /* DBMultiPointCurv.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A3DE76319052694002BC3DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A3DE73519052693002BC3DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A3DE73C19052693002BC3DF;
+			remoteInfo = "multipoint-curv";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A3DE73D19052693002BC3DF /* multipoint-curv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multipoint-curv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3DE74019052693002BC3DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8A3DE74219052693002BC3DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A3DE74419052693002BC3DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A3DE74819052693002BC3DF /* multipoint-curv-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "multipoint-curv-Info.plist"; sourceTree = "<group>"; };
+		8A3DE74A19052693002BC3DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A3DE74C19052693002BC3DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A3DE74E19052693002BC3DF /* multipoint-curv-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "multipoint-curv-Prefix.pch"; sourceTree = "<group>"; };
+		8A3DE74F19052693002BC3DF /* DBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBAppDelegate.h; sourceTree = "<group>"; };
+		8A3DE75019052693002BC3DF /* DBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBAppDelegate.m; sourceTree = "<group>"; };
+		8A3DE75319052693002BC3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A3DE75519052693002BC3DF /* DBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBViewController.h; sourceTree = "<group>"; };
+		8A3DE75619052693002BC3DF /* DBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBViewController.m; sourceTree = "<group>"; };
+		8A3DE75819052693002BC3DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A3DE75E19052694002BC3DF /* multipoint-curvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "multipoint-curvTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3DE75F19052694002BC3DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8A3DE76719052694002BC3DF /* multipoint-curvTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "multipoint-curvTests-Info.plist"; sourceTree = "<group>"; };
+		8A3DE76919052694002BC3DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A3DE76B19052694002BC3DF /* multipoint_curvTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = multipoint_curvTests.m; sourceTree = "<group>"; };
+		8A3DE776190526B6002BC3DF /* DBMultiPointCurv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMultiPointCurv.h; sourceTree = "<group>"; };
+		8A3DE777190526B6002BC3DF /* DBMultiPointCurv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMultiPointCurv.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A3DE73A19052693002BC3DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3DE74319052693002BC3DF /* CoreGraphics.framework in Frameworks */,
+				8A3DE74519052693002BC3DF /* UIKit.framework in Frameworks */,
+				8A3DE74119052693002BC3DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3DE75B19052694002BC3DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3DE76019052694002BC3DF /* XCTest.framework in Frameworks */,
+				8A3DE76219052694002BC3DF /* UIKit.framework in Frameworks */,
+				8A3DE76119052694002BC3DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A3DE73419052693002BC3DF = {
+			isa = PBXGroup;
+			children = (
+				8A3DE74619052693002BC3DF /* multipoint-curv */,
+				8A3DE76519052694002BC3DF /* multipoint-curvTests */,
+				8A3DE73F19052693002BC3DF /* Frameworks */,
+				8A3DE73E19052693002BC3DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A3DE73E19052693002BC3DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A3DE73D19052693002BC3DF /* multipoint-curv.app */,
+				8A3DE75E19052694002BC3DF /* multipoint-curvTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A3DE73F19052693002BC3DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A3DE74019052693002BC3DF /* Foundation.framework */,
+				8A3DE74219052693002BC3DF /* CoreGraphics.framework */,
+				8A3DE74419052693002BC3DF /* UIKit.framework */,
+				8A3DE75F19052694002BC3DF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A3DE74619052693002BC3DF /* multipoint-curv */ = {
+			isa = PBXGroup;
+			children = (
+				8A3DE7751905269D002BC3DF /* libs */,
+				8A3DE74F19052693002BC3DF /* DBAppDelegate.h */,
+				8A3DE75019052693002BC3DF /* DBAppDelegate.m */,
+				8A3DE75219052693002BC3DF /* Main.storyboard */,
+				8A3DE75519052693002BC3DF /* DBViewController.h */,
+				8A3DE75619052693002BC3DF /* DBViewController.m */,
+				8A3DE75819052693002BC3DF /* Images.xcassets */,
+				8A3DE74719052693002BC3DF /* Supporting Files */,
+			);
+			path = "multipoint-curv";
+			sourceTree = "<group>";
+		};
+		8A3DE74719052693002BC3DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A3DE74819052693002BC3DF /* multipoint-curv-Info.plist */,
+				8A3DE74919052693002BC3DF /* InfoPlist.strings */,
+				8A3DE74C19052693002BC3DF /* main.m */,
+				8A3DE74E19052693002BC3DF /* multipoint-curv-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A3DE76519052694002BC3DF /* multipoint-curvTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A3DE76B19052694002BC3DF /* multipoint_curvTests.m */,
+				8A3DE76619052694002BC3DF /* Supporting Files */,
+			);
+			path = "multipoint-curvTests";
+			sourceTree = "<group>";
+		};
+		8A3DE76619052694002BC3DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A3DE76719052694002BC3DF /* multipoint-curvTests-Info.plist */,
+				8A3DE76819052694002BC3DF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A3DE7751905269D002BC3DF /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				8A3DE776190526B6002BC3DF /* DBMultiPointCurv.h */,
+				8A3DE777190526B6002BC3DF /* DBMultiPointCurv.m */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A3DE73C19052693002BC3DF /* multipoint-curv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3DE76F19052694002BC3DF /* Build configuration list for PBXNativeTarget "multipoint-curv" */;
+			buildPhases = (
+				8A3DE73919052693002BC3DF /* Sources */,
+				8A3DE73A19052693002BC3DF /* Frameworks */,
+				8A3DE73B19052693002BC3DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "multipoint-curv";
+			productName = "multipoint-curv";
+			productReference = 8A3DE73D19052693002BC3DF /* multipoint-curv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A3DE75D19052694002BC3DF /* multipoint-curvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3DE77219052694002BC3DF /* Build configuration list for PBXNativeTarget "multipoint-curvTests" */;
+			buildPhases = (
+				8A3DE75A19052694002BC3DF /* Sources */,
+				8A3DE75B19052694002BC3DF /* Frameworks */,
+				8A3DE75C19052694002BC3DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A3DE76419052694002BC3DF /* PBXTargetDependency */,
+			);
+			name = "multipoint-curvTests";
+			productName = "multipoint-curvTests";
+			productReference = 8A3DE75E19052694002BC3DF /* multipoint-curvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A3DE73519052693002BC3DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = LenyeStudio;
+				TargetAttributes = {
+					8A3DE75D19052694002BC3DF = {
+						TestTargetID = 8A3DE73C19052693002BC3DF;
+					};
+				};
+			};
+			buildConfigurationList = 8A3DE73819052693002BC3DF /* Build configuration list for PBXProject "multipoint-curv" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A3DE73419052693002BC3DF;
+			productRefGroup = 8A3DE73E19052693002BC3DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A3DE73C19052693002BC3DF /* multipoint-curv */,
+				8A3DE75D19052694002BC3DF /* multipoint-curvTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A3DE73B19052693002BC3DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3DE75919052693002BC3DF /* Images.xcassets in Resources */,
+				8A3DE74B19052693002BC3DF /* InfoPlist.strings in Resources */,
+				8A3DE75419052693002BC3DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3DE75C19052694002BC3DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3DE76A19052694002BC3DF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A3DE73919052693002BC3DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3DE778190526B6002BC3DF /* DBMultiPointCurv.m in Sources */,
+				8A3DE75119052693002BC3DF /* DBAppDelegate.m in Sources */,
+				8A3DE75719052693002BC3DF /* DBViewController.m in Sources */,
+				8A3DE74D19052693002BC3DF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3DE75A19052694002BC3DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3DE76C19052694002BC3DF /* multipoint_curvTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A3DE76419052694002BC3DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A3DE73C19052693002BC3DF /* multipoint-curv */;
+			targetProxy = 8A3DE76319052694002BC3DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A3DE74919052693002BC3DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3DE74A19052693002BC3DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8A3DE75219052693002BC3DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3DE75319052693002BC3DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A3DE76819052694002BC3DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3DE76919052694002BC3DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A3DE76D19052694002BC3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A3DE76E19052694002BC3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A3DE77019052694002BC3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "multipoint-curv/multipoint-curv-Prefix.pch";
+				INFOPLIST_FILE = "multipoint-curv/multipoint-curv-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8A3DE77119052694002BC3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "multipoint-curv/multipoint-curv-Prefix.pch";
+				INFOPLIST_FILE = "multipoint-curv/multipoint-curv-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8A3DE77319052694002BC3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/multipoint-curv.app/multipoint-curv";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "multipoint-curv/multipoint-curv-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "multipoint-curvTests/multipoint-curvTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8A3DE77419052694002BC3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/multipoint-curv.app/multipoint-curv";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "multipoint-curv/multipoint-curv-Prefix.pch";
+				INFOPLIST_FILE = "multipoint-curvTests/multipoint-curvTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A3DE73819052693002BC3DF /* Build configuration list for PBXProject "multipoint-curv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3DE76D19052694002BC3DF /* Debug */,
+				8A3DE76E19052694002BC3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A3DE76F19052694002BC3DF /* Build configuration list for PBXNativeTarget "multipoint-curv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3DE77019052694002BC3DF /* Debug */,
+				8A3DE77119052694002BC3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8A3DE77219052694002BC3DF /* Build configuration list for PBXNativeTarget "multipoint-curvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3DE77319052694002BC3DF /* Debug */,
+				8A3DE77419052694002BC3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A3DE73519052693002BC3DF /* Project object */;
+}
